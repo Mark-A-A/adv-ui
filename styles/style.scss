@@ -1,0 +1,68 @@
+@import './normalize.scss';
+@import './variables.scss';
+
+body,
+.MuiTableCell-root {
+  font-family: $font-family;
+  // background-color: white;
+
+  // .app-root {
+  //   height: 100vh;
+  // }
+}
+
+// nav {
+//   .appBar-header {
+//     background-color: $light-gray;
+//   }
+
+//   .navbar-items-list {
+//     display: flex;
+//     flex-direction: row;
+
+//     align-items: center;
+//     justify-content: center;
+
+//     padding-inline-start: 15px;
+//     padding-inline-end: 15px;
+
+//     margin: 20px 0;
+
+//     li {
+//       list-style: none;
+//     }
+
+//     li#item-logo {
+//       flex: 0 1 15%;
+//       .logo {
+//         img {
+//           width: 50px;
+//         }
+//       }
+//     }
+
+//     li#item-title {
+//       display: flex;
+//       justify-content: center;
+//       align-items: center;
+//       flex: 1 1;
+
+//       h2,
+//       h3,
+//       h4 {
+//         color: $dark-gray;
+//         font-weight: 600;
+//       }
+//     }
+
+//     li#item-welcome-user {
+//       flex-basis: 15%;
+//       flex-shrink: 1;
+//       justify-content: flex-end;
+//       align-items: center;
+//       display: flex;
+//     }
+//   }
+// }
+
+
