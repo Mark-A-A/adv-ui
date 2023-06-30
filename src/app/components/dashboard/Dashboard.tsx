@@ -140,10 +140,6 @@ export default function Dashboard() {
             sx={{
               display: "flex",
               flexDirection: "column",
-              /* justify-content: center; */
-              /* align-items: center; */
-              m: 2,
-              ml: 6,
             }}
           >
             {mainListItems}
@@ -180,10 +176,6 @@ export default function Dashboard() {
                     variant="h4"
                     color="inherit"
                     noWrap
-                    sx={{
-                      m: 2,
-                      flexGrow: 1,
-                    }}
                   >
                     Star Wars Films
                   </Typography>

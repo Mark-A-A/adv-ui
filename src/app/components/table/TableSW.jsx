@@ -155,7 +155,7 @@ export default function TableSW(props) {
 
   return (
     <div className={classes.root}>
-      <TableContainer className="sw-films-table-container" sx={{t: 2}} >
+      <TableContainer className="sw-films-table-container" >
         <Table
           className={classes.table}
           aria-labelledby="tableTitle"

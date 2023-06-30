@@ -11,10 +11,11 @@ body,
   // }
 }
 
-// nav {
-//   .appBar-header {
-//     background-color: $light-gray;
-//   }
+nav {
+  .MuiListItemButton-root {
+    width: max-content;
+  }
+}
 
 //   .navbar-items-list {
 //     display: flex;
