@@ -13,18 +13,31 @@ type Film = {
   url: string;
 };
 
+type FilmsProps = {
+  headers: any;
+  rows: Film[];
+  loading: boolean;
+  error: any;
+};
+function FilmsHOC({ headers, rows, loading, error }: FilmsProps) {
+  if (loading) {
+    return (
+      <Box sx={{ display: "flex" }}>
+        <CircularProgress />
+      </Box>
+    );
+  } else if (error) {
+    return <Box sx={{ display: "flex" }}>Oops! Something went wrong</Box>;
+  }
+  return <TableSW headers={headers} rows={rows} />;
+}
+
 export default function FilmsTable() {
-  const { headers: headers, rows, loading } = useFilmsTableData();
+  const props = useFilmsTableData();
 
   return (
     <>
-      {loading ? (
-        <Box sx={{ display: "flex" }}>
-          <CircularProgress />
-        </Box>
-      ) : (
-        <TableSW headers={headers} rows={rows} />
-      )}
+      <FilmsHOC {...props} />
     </>
   );
 }

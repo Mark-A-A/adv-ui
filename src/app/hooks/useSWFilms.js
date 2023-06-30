@@ -43,6 +43,7 @@ export const headers = [
 export const useFilmsTableData = () => {
   const [loading, setLoading] = useState(true);
   const [films, setFilmsList] = useState([]);
+  const [error, setError] = useState(null)
 
   useEffect(() => {
     // async fetch
@@ -55,15 +56,14 @@ export const useFilmsTableData = () => {
       .catch((e) => {
         console.error(e);
         setLoading(false);
+        setError(e)
       });
-    // return () => {
-    //     second
-    // }
   }, []);
 
   return {
     headers: headers,
     rows: films,
     loading,
+    error
   };
 };
