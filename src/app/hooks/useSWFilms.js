@@ -61,7 +61,7 @@ export const useFilmsTableData = () => {
   }, []);
 
   return {
-    headers: headers,
+    headers,
     rows: films,
     loading,
     error
